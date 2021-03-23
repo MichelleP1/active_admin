@@ -1,0 +1,28 @@
+<h1>Listing Books</h1>
+
+<div class="columns">
+  <%= render partial: 'customer',
+             collection: @customers,
+             locals: { show_link: false } %>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customers.each do |customer| %>
+      <tr>
+        <td><%= customer.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
