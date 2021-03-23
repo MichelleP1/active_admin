@@ -1,2 +1,12 @@
-<h1>Customers#alphabetized</h1>
-<p>Find me in app/views/customers/alphabetized.html.erb</p>
+<h1 class="title">Alphabetized Customers</h1>
+
+<div class="columns">
+  <%= render partial: 'customer',
+             collection: @customers,
+             locals: { show_link: false } %>
+</div>
+
+<%= link_to "Index", "/customers" %>
+<%= link_to "Missing email", "missing_email" %>
+
+<br>

@@ -58,3 +58,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'activeadmin'
 # Plus integrations with:
 gem 'devise'
+
+gem "bulma-rails", "~> 0.8.0"
